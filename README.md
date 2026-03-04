@@ -1,9 +1,19 @@
-﻿# VisReddit
+﻿# Reddits visualization
 Visualizations for reddits data with application of **Power BI** dashboards.
+
 ## Dashboards list
-1. SentimentAnalysis.pbix -- 3 dashboards: **"Timeline & quantitive analysis"**, **"Authors quantitive analysis"**, **"Sentiment histograms"**
-2. PopularityAnalysis.pbix -- 3 dashboards: **"Timeline & quantitive analysis"**, **"Comment level quantitive analysis"**, **"Popularity histograms"**
+1. SentimentAnalysis.pbix -- 2 dashboards: 
+    * **"Reddits -- sentiment timeline & counts distribution"**
+    * **"Authors -- sentiment histograms & categories distribution"**
+2. PopularityAnalysis.pbix -- 3 dashboards:
+    * **"Reddits -- popularity timeline & counts distribution"**
+    * **"Reddits -- entry level histograms"**
+    * **"Authors -- popularity measure histograms"**
 
 ## Dashboard examples
-### Timeline & quantitive ananlysis
-![timeline_quantitive_analysis](/images/timeline_quantitive_analysis.png)
+### Reddits -- sentiment timeline & counts distribution
+![reddits_sentiment_timeline_counts](/assets/images/reddits_sentiment_timeline_counts.png)
+
+### Authors -- sentiment histograms & categories distribution
+![reddits_sentiment_histogram_counts](/assets/images/reddits_sentiment_histogram_counts.png)
+
