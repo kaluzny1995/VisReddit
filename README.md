@@ -1,4 +1,4 @@
-﻿﻿# Reddits visualization
+﻿# Reddits visualization
 Visualizations for reddits data with application of **Power BI** dashboards. **Looker** dashboards will come soon.
 
 **IMPORTANT**: Before launching the Power BI dashboards, it is necessary to download the Venn diagram visualization from [GitHub source](https://github.com/DataChant/PowerBI-Visuals-AppSource/blob/main/All%20Visuals/PBIVIZ%20with%20versions/vennDiagram8527AJ74DB74562488PCR752UTY9465.4.0.0.0.pbiviz) and import it into the dashboard.
@@ -16,7 +16,7 @@ Visualizations for reddits data with application of **Power BI** dashboards. **L
  10. **Popularity** -- a measure of an *entry* denoting how popular the *entry* is on Reddit platform. A **number of reddits** (per day) **number of comments**, **reactions**, **upvote ratio** (fraction of number of up reactions and all reactions) or **number of controversial entries** are the examples of such measures. 
  
  ## Dataflow diagram
-![reddits_sentiment_timeline_counts](/assets/images/reddits_sentiment_timeline_counts.png)
+![reddits_dataflow_visual](/assets/images/reddits_dataflow_visual.png)
 1. Importing the data from *Supabase Postgres* tables or via *SQL statement*.
 2. Data transformation via *Power BI/Looker* data transformation tools.
 3. Visualization of transformed data on *Power BI/Looker* dashboards.
@@ -32,7 +32,7 @@ Visualizations for reddits data with application of **Power BI** dashboards. **L
 
 ## Dashboards
 ### Reddits -- sentiment timeline & counts distribution
-![reddits_dataflow_visual](/assets/images/reddits_dataflow_visual.png)
+![reddits_sentiment_timeline_counts](/assets/images/reddits_sentiment_timeline_counts.png)
 **Question**: *How do the sentiment values change on the timeline and what is the sentiment categories overall distribution?*
 
 **Components**:
