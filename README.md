@@ -32,7 +32,7 @@ Visualizations for reddits data with application of **Power BI** dashboards. **L
 
 ## Dashboards
 ### Reddits -- sentiment timeline & counts distribution
-<embed src="/assets/reports/SentimentAnalysis.pdf#page=1" type="application/pdf" width="100%" height="600px" />
+[![reddits_sentiment_timeline_counts](/assets/images/reddits_sentiment_timeline_counts.png)](/assets/reports/SentimentAnalysis.pdf#page=1)
 
 **Question**: *How do the sentiment values change on the timeline and what is the sentiment categories overall distribution?*
 
@@ -43,7 +43,7 @@ Visualizations for reddits data with application of **Power BI** dashboards. **L
 4. **Average polarity and subjectivity timeline.** *[bottom right]* To show the changes of texts polarity and subjectivity over a period of time.
 
 ### Authors -- sentiment histograms & categories distribution
-<embed src="/assets/reports/SentimentAnalysis.pdf#page=2" type="application/pdf" width="100%" height="600px" />
+[![reddits_sentiment_histogram_counts](/assets/images/reddits_sentiment_histogram_counts.png)](/assets/reports/SentimentAnalysis.pdf#page=2)
 
 **Question**: *How many authors post texts which sentiment measure has got the certain value or which sentiment category has aquired?*
 
@@ -53,7 +53,7 @@ Visualizations for reddits data with application of **Power BI** dashboards. **L
 3. **6 histograms of authors number who posted texts yielding: negative, neutral, positive, compound, polarity and subjectivity sentiments.** *[middle and left]* To visualize the quantitive distribution of authors whose texts indicate sentiments of certain measure value.
 
 ### Reddits -- popularity timeline & counts distribution
-<embed src="/assets/reports/PopularityAnalysis.pdf#page=1" type="application/pdf" width="100%" height="600px" />
+[![reddits_popularity_timeline_counts](/assets/images/reddits_popularity_timeline_counts.png)](/assets/reports/PopularityAnalysis.pdf#page=1)
 
 **Question**: *How do the popularity values change on the timeline and what is the entries controversiality overall distribution?*
 
@@ -68,7 +68,7 @@ Visualizations for reddits data with application of **Power BI** dashboards. **L
 	4.4. Minimal upvote ratio. Maximal was not visualized due to lack of significant changes in value. *[bottom]*
 
 ### Reddits -- entry level histograms
-<embed src="/assets/reports/PopularityAnalysis.pdf#page=2" type="application/pdf" width="100%" height="600px" />
+[![reddits_popularity_entry_level_histogram_counts](/assets/images/reddits_popularity_entry_level_histogram_counts.png)](/assets/reports/PopularityAnalysis.pdf#page=2)
 
 **Question**: *How does the texts popularity look like according to reactions number of various category (level) entries?*
 
@@ -81,7 +81,7 @@ Visualizations for reddits data with application of **Power BI** dashboards. **L
 	2.4. Reply lower levels category distributions. *[middle and bottom]*
 
 ### Authors -- popularity measure histograms
-<embed src="/assets/reports/PopularityAnalysis.pdf#page=3" type="application/pdf" width="100%" height="600px" />
+[![reddits_popularity_histogram_counts](/assets/images/reddits_popularity_histogram_counts.png)](/assets/reports/PopularityAnalysis.pdf#page=3)
 
 **Question**: *How does the texts popularity look like according to authors number of various popularity measures and what is the authors distribution who posted texts marked as controversial or not?*
 
