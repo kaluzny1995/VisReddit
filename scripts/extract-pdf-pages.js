@@ -72,11 +72,11 @@ async function extractPage(pdfPath, pageNum, outputPngPath) {
 
         const targetUrl = fileUrl(pdfPath) + '#page=' + pageNum;
         sendMsg(ws, { id: 2, method: 'Page.navigate', params: { url: targetUrl } });
-
-        await new Promise(r => setTimeout(r, 10000));
+        await new Promise(r => setTimeout(r, 25000));
 
         sendMsg(ws, { id: 3, method: 'Page.captureScreenshot', params: {
-            format: 'png', fromSurface: true
+            format: 'png', fromSurface: true,
+            clip: { x: 0, y: 35, width: 976, height: 516, scale: 1 }
         }});
 
         let screenshotData = null;

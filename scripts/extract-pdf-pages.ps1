@@ -39,12 +39,4 @@ foreach ($item in $PageMapping) {
     $result | Select-String "^OK" | ForEach-Object { Write-Host "  $_" }
 }
 
-Write-Host "Cropping toolbar (top 80px)..."
-$Magick = "C:\Program Files\ImageMagick-7.1.2-Q16-HDRI\magick.exe"
-foreach ($item in $PageMapping) {
-    $outPath = Join-Path $ImagesDir $item.Output
-    & $Magick convert $outPath -crop "1992x1072+0+80" $outPath
-    Write-Host "  $($item.Output) cropped"
-}
-
-Write-Host "Done - all pages extracted and cropped."
+Write-Host "Done - all pages extracted (y=35 CSS top, +15 CSS from previous)."
