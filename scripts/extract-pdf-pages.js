@@ -4,7 +4,26 @@ const http = require('http');
 const path = require('path');
 const os = require('os');
 
-const EDGE = 'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe';
+function findEdge() {
+    if (process.env.EDGE_PATH && fs.existsSync(process.env.EDGE_PATH)) {
+        return process.env.EDGE_PATH;
+    }
+    const candidates = [
+        'C:\\Program Files\\Microsoft\\Edge\\Application\\msedge.exe',
+        'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe',
+        path.join(process.env.LOCALAPPDATA || '', 'Microsoft\\Edge\\Application\\msedge.exe')
+    ];
+    for (const p of candidates) {
+        if (fs.existsSync(p)) return p;
+    }
+    return null;
+}
+
+const EDGE = findEdge();
+if (!EDGE) {
+    console.error('Microsoft Edge not found. Set EDGE_PATH env var or check common install paths.');
+    process.exit(1);
+}
 
 function httpPut(url) {
     return new Promise((resolve, reject) => {
