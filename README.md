@@ -8,7 +8,7 @@ Visualizations for reddits data with application of **Power BI** dashboards. **L
  2. **Comment** -- a comment of a *reddit*
  3. **Reply n-th level** -- a reply of a reddits *comment*. A level of reply denotes how deeply the reply lays. Reply 1-st level denotes a reply of a *comment*, reply 2-nd level denotes a reply of a reply of a *comment*, as so on and so forth
  4. **Author** -- an author of a *reddit*, a *comment* or a *reply*
- 5. **Phrase** -- a word or a words sequence referring to a group of *reddits* to analyse, i.e. to show to analyses results for different reddit topics. In the project the *reddits* are analysed in 6 different phrases: *aussie*, *border collie*, *corgi*, *iran*, *israel* and *trump*.
+ 5. **Phrase** -- a word or a words sequence referring to a group of *reddits* to analyse, i.e. to show to analyses results for different reddit topics. In the project the *reddits* are analysed in 3 different phrases: *iran*, *israel* and *trump*.
  6. **Entry type** -- a type of an entry on Reddit platform. A *reddit* or a *comment*
  7. **Entry category** -- a category of an analysed element. A *reddit*, a *comment* or a *reply* of various level
  8. **Sentiment** --  a measure of an *entry* text of certain *author* denoting his attitude, thought or judgement prompted by feeling. The sentiment may be **negative** (how much the entry text is negative), **neutral** (how neutral), **positive** (how positive) and **compound** (overall measure). The **polarity** sentiment denotes the coefficient how negative/posititve the texts is and **subjectivity**, its subjectiveness
