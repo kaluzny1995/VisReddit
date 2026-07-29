@@ -2,6 +2,12 @@
 Visualizations for reddits data with application of **Power BI** dashboards. **Looker** dashboards will come soon.
 
 **IMPORTANT**: Before launching the Power BI dashboards, it is necessary to download the Venn diagram visualization from [GitHub source](https://github.com/DataChant/PowerBI-Visuals-AppSource/blob/main/All%20Visuals/PBIVIZ%20with%20versions/vennDiagram8527AJ74DB74562488PCR752UTY9465.4.0.0.0.pbiviz) and import it into the dashboard.
+
+**NOTE**: The solution works only on Microsoft Windows 10+ platform. After updating the .pdf files with visualization dashboards you can extract the .png images automatically by running command:
+
+```
+scripts/extract-pdf-pages.ps1
+```
  
  ## Concepts glossary
  1. **Reddit** -- a social medium platform Reddit.com as well as the specific name of Reddits posts
