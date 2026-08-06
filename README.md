@@ -2,13 +2,19 @@
 Visualizations for reddits data with application of **Power BI** dashboards. **Looker** dashboards will come soon.
 
 **IMPORTANT**: Before launching the Power BI dashboards, it is necessary to download the Venn diagram visualization from [GitHub source](https://github.com/DataChant/PowerBI-Visuals-AppSource/blob/main/All%20Visuals/PBIVIZ%20with%20versions/vennDiagram8527AJ74DB74562488PCR752UTY9465.4.0.0.0.pbiviz) and import it into the dashboard.
+
+**NOTE**: The solution works only on Microsoft Windows 10+ platform. After updating the .pdf files with visualization dashboards you can extract the .png images automatically by running command:
+
+```
+scripts/extract-pdf-pages.ps1
+```
  
  ## Concepts glossary
  1. **Reddit** -- a social medium platform Reddit.com as well as the specific name of Reddits posts
  2. **Comment** -- a comment of a *reddit*
  3. **Reply n-th level** -- a reply of a reddits *comment*. A level of reply denotes how deeply the reply lays. Reply 1-st level denotes a reply of a *comment*, reply 2-nd level denotes a reply of a reply of a *comment*, as so on and so forth
  4. **Author** -- an author of a *reddit*, a *comment* or a *reply*
- 5. **Phrase** -- a word or a words sequence referring to a group of *reddits* to analyse, i.e. to show to analyses results for different reddit topics. In the project the *reddits* are analysed in 6 different phrases: *aussie*, *border collie*, *corgi*, *iran*, *israel* and *trump*.
+ 5. **Phrase** -- a word or a words sequence referring to a group of *reddits* to analyse, i.e. to show to analyses results for different reddit topics. In the project the *reddits* are analysed in 3 different phrases: *iran*, *israel* and *trump*.
  6. **Entry type** -- a type of an entry on Reddit platform. A *reddit* or a *comment*
  7. **Entry category** -- a category of an analysed element. A *reddit*, a *comment* or a *reply* of various level
  8. **Sentiment** --  a measure of an *entry* text of certain *author* denoting his attitude, thought or judgement prompted by feeling. The sentiment may be **negative** (how much the entry text is negative), **neutral** (how neutral), **positive** (how positive) and **compound** (overall measure). The **polarity** sentiment denotes the coefficient how negative/posititve the texts is and **subjectivity**, its subjectiveness
@@ -32,7 +38,8 @@ Visualizations for reddits data with application of **Power BI** dashboards. **L
 
 ## Dashboards
 ### Reddits -- sentiment timeline & counts distribution
-![reddits_sentiment_timeline_counts](/assets/images/reddits_sentiment_timeline_counts.png)
+[![reddits_sentiment_timeline_counts](/assets/images/reddits_sentiment_timeline_counts.png)](/assets/reports/SentimentAnalysis.pdf#page=1)
+
 **Question**: *How do the sentiment values change on the timeline and what is the sentiment categories overall distribution?*
 
 **Components**:
@@ -42,7 +49,8 @@ Visualizations for reddits data with application of **Power BI** dashboards. **L
 4. **Average polarity and subjectivity timeline.** *[bottom right]* To show the changes of texts polarity and subjectivity over a period of time.
 
 ### Authors -- sentiment histograms & categories distribution
-![reddits_sentiment_histogram_counts](/assets/images/reddits_sentiment_histogram_counts.png)
+[![reddits_sentiment_histogram_counts](/assets/images/reddits_sentiment_histogram_counts.png)](/assets/reports/SentimentAnalysis.pdf#page=2)
+
 **Question**: *How many authors post texts which sentiment measure has got the certain value or which sentiment category has aquired?*
 
 **Components**:
@@ -51,7 +59,8 @@ Visualizations for reddits data with application of **Power BI** dashboards. **L
 3. **6 histograms of authors number who posted texts yielding: negative, neutral, positive, compound, polarity and subjectivity sentiments.** *[middle and left]* To visualize the quantitive distribution of authors whose texts indicate sentiments of certain measure value.
 
 ### Reddits -- popularity timeline & counts distribution
-![reddits_popularity_timeline_counts](/assets/images/reddits_popularity_timeline_counts.png)
+[![reddits_popularity_timeline_counts](/assets/images/reddits_popularity_timeline_counts.png)](/assets/reports/PopularityAnalysis.pdf#page=1)
+
 **Question**: *How do the popularity values change on the timeline and what is the entries controversiality overall distribution?*
 
 **Components**:
@@ -65,7 +74,8 @@ Visualizations for reddits data with application of **Power BI** dashboards. **L
 	4.4. Minimal upvote ratio. Maximal was not visualized due to lack of significant changes in value. *[bottom]*
 
 ### Reddits -- entry level histograms
-![reddits_popularity_entry_level_histogram_counts](/assets/images/reddits_popularity_entry_level_histogram_counts.png)
+[![reddits_popularity_entry_level_histogram_counts](/assets/images/reddits_popularity_entry_level_histogram_counts.png)](/assets/reports/PopularityAnalysis.pdf#page=2)
+
 **Question**: *How does the texts popularity look like according to reactions number of various category (level) entries?*
 
 **Components**:
@@ -77,7 +87,8 @@ Visualizations for reddits data with application of **Power BI** dashboards. **L
 	2.4. Reply lower levels category distributions. *[middle and bottom]*
 
 ### Authors -- popularity measure histograms
-![reddits_popularity_histogram_counts](/assets/images/reddits_popularity_histogram_counts.png)
+[![reddits_popularity_histogram_counts](/assets/images/reddits_popularity_histogram_counts.png)](/assets/reports/PopularityAnalysis.pdf#page=3)
+
 **Question**: *How does the texts popularity look like according to authors number of various popularity measures and what is the authors distribution who posted texts marked as controversial or not?*
 
 **Components**:
